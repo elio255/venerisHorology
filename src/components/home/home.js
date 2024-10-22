@@ -20,7 +20,7 @@ const Home = () => {
         <h1 className="title">Veneris Horology</h1>
         <h2 className="subtitle">A Legacy of Precision, A Statement of Style.</h2>
         <div className='btn'>
-        <button className="shop-button" onClick={() => navigate('/shop')}>Shop Now</button>
+        <button className="shop-button" onClick={() => navigate('/shop')}>Shop Now LOW</button>
         </div> 
       </div>
         <img src={FirstW} alt="First" className="first-image" />
