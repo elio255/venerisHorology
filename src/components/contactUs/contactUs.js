@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './contactUs.css';
-import HeaderBar from '../navigationBar/headerbar';
+
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -47,7 +47,6 @@ const ContactUs = () => {
 
   return (
     <div className="container">
-      <HeaderBar />
       <div className="subContainer">
         <h1>Contact Us</h1>
         <p className="subtitleDesign">Home / <span style={{ color: '#C5A580' }}>Contact Us</span></p>
