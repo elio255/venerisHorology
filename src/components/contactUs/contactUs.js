@@ -15,8 +15,6 @@ const ContactUs = () => {
     enquiry: false,
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -42,9 +40,8 @@ const ContactUs = () => {
 
     if (hasErrors) {
       setFormErrors(errors);
-      setIsSubmitted(false);
     } else {
-      setIsSubmitted(true);
+      window.location.reload(); // Refresh the page on successful form submission
     }
   };
 
@@ -64,11 +61,18 @@ const ContactUs = () => {
             <strong>Telephone:</strong> (012) 800 456 789<br />
             <strong>Fax:</strong> (012) 800 456 789
           </p>
-          <button className="googleMapButton">View Google Map</button>
+          <button
+            className="googleMapButton"
+            onClick={() => window.open('https://www.google.com/maps')}
+          >
+            View Google Map
+          </button>
         </div>
       </div>
+
       <div className="contactFormSection">
         <h2>Contact Us</h2>
+        <hr className="dividerLine" />
         <form onSubmit={handleSubmit}>
           <div className="formGroup">
             <label>Your Name {formData.name === '' && <span className="required">*</span>}</label>
@@ -106,8 +110,6 @@ const ContactUs = () => {
           </div>
 
           <button type="submit" className="submitButton">Submit</button>
-
-          {isSubmitted && <p className="successMessage">Your message has been submitted successfully!</p>}
         </form>
       </div>
     </div>
