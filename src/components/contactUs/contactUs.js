@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './contactUs.css';
-import HeaderBar from './navigationBar/headerbar';
+import HeaderBar from '../navigationBar/headerbar';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({

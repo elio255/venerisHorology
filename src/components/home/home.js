@@ -2,11 +2,11 @@ import React from 'react';
 import './home.css';
 
 
-import FirstW from '../components/images/fisrtPiccut.jpg';
-import BestSeller2 from '../components/images/bstGold.jpg';
-import BestSeller3 from '../components/images/bstFem.jpg';
-import BestSeller1 from '../components/images/bstblack.jpg';
-import Founder from '../components/images/founder.jpg';
+import FirstW from '../images/fisrtPiccut.jpg';
+import BestSeller2 from '../images/bstGold.jpg';
+import BestSeller3 from '../images/bstFem.jpg';
+import BestSeller1 from '../images/bstblack.jpg';
+import Founder from '../images/founder.jpg';
 import { useNavigate } from 'react-router-dom'; // Import the hook for navigation
 
 

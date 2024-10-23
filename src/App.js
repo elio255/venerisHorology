@@ -1,8 +1,8 @@
 import React from 'react';
 import HeaderBar from './components/navigationBar/headerbar';  // Ensure the path and filename are correct
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/home';  // Ensure the path and filename are correct
-import ContactUs from './components/contactUs';
+import Home from './components/home/home';  // Ensure the path and filename are correct
+import ContactUs from './components/contactUs/contactUs';
 import './App.css';
 
 const App = ()  => {
