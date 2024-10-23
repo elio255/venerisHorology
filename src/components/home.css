@@ -1,0 +1,62 @@
+.first-part {
+    background-color: black; /* Set the background to black */
+    /* padding: 20px; Optional: Add some padding */
+    text-align:start; /* Optional: Center the content */
+  }
+  
+  .first-image {
+    width: 80%; /* Adjust this to the desired size */
+    height:100vh; /* Maintain aspect ratio */
+    max-width: 500px; /* Optional: Set a max width if needed */
+  }
+  .text-container {
+     /* Limit the width for better readability */
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+  top: 60%;
+  left: 65%;
+  transform: translate(-50%, -50%); /* Centers text within container */
+  color: white;
+  text-align: center;
+    
+  }
+  
+  .title {
+    
+    color: #C5A580;
+    margin: 0; /* Remove default margin */
+    text-align: center;
+    font-size: 4em;
+  }
+  
+  .subtitle {
+   color: white;
+  padding-top: 50px; /* Space between title and subtitle */
+    text-align: center;
+    -webkit-text-stroke: 0.3px #C5A580 ; 
+   
+
+  }
+
+
+.shop-button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: black;
+    color: #C5A580;
+    border: 2px solid #C5A580; /* Yellow border */
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+
+  }
+  
+  .shop-button:hover {
+    background-color: #C5A580; /* Yellow on hover */
+    color: black; /* Change text color on hover */
+  }
+  
+  

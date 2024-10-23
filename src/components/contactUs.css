@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+  }
+  
+  .container {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: white;
+    margin-top: 5%;
+  }
+  
+  .subContainer {
+    text-align: center;
+  }
+  
+  .subtitleDesign {
+    color: white;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  .storeLocDetails {
+    background-color: rgb(67, 67, 67);
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .LocDescontainer {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  
+  .googleMapButton {
+    background-color: #C5A580;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .contactFormSection {
+    margin: 10% 10% 0;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formGroup label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #838383;
+    border-radius: 5px;
+    background-color: #343434; 
+    color: white; 
+}
+  
+  .formGroup input[type="text"],
+  .formGroup input[type="email"] {
+    height: 40px;
+  }
+  
+  .formGroup textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .submitButton {
+    background-color: #C5A580;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .errorMessage {
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  
+  .successMessage {
+    color: red;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
