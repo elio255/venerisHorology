@@ -1,3 +1,4 @@
+/* General styles */
 body {
   background-color: black;
 }
@@ -6,6 +7,7 @@ body {
   flex: 1;
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
 }
 
 h1 {
@@ -31,18 +33,19 @@ h2 {
 }
 
 .contactImage {
-  width: 700px; /* Keeps aspect ratio */
-  height: 450px; /* Set a smaller height */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   margin-bottom: 30px;
   border-radius: 10px;
 }
-
 
 .formAndLocationContainer {
   display: flex;
   justify-content: space-between;
   margin: 0 10%;
-  flex-wrap: wrap; /* Makes it responsive */
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .contactFormSection {
@@ -60,9 +63,9 @@ h2 {
   width: 100%;
   height: auto;
   padding: 15px;
+  margin-top: 70px;
   color: white;
   margin-bottom: 20px;
-  margin-top: 60px;
   border-radius: 8px;
 }
 
@@ -77,24 +80,28 @@ h2 {
 }
 
 .googleMapButton:hover {
-  background-color: #A88A6C;
+  color:white;
 }
 
+/* Adjusted hr styles */
 .dividerLine {
   border: 1px solid grey;
-  width:1035px;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  height: 1px;
+  background-color: grey;
 }
 
 .formGroup {
   margin-bottom: 15px;
 }
 
-
 .formGroup label {
   color: white;
   display: block;
   margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .formGroup input,
@@ -126,12 +133,12 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
-  display: inline-block; 
-  margin-bottom: 50px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .submitButton:hover {
-  background-color: #A88A6C;
+  color:white;
 }
 
 .required {
@@ -142,4 +149,31 @@ h2 {
   color: red;
   margin-top: 5px;
   font-size: 12px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .formAndLocationContainer {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .contactFormSection,
+  .LocDescontainer {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contactImage {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .dividerLine {
+    width: 100%;
+  }
+
+  .formGroup label {
+    font-size: 14px;
+  }
 }

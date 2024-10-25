@@ -59,7 +59,17 @@ const ContactUs = () => {
       <div className="formAndLocationContainer">
         <div className="contactFormSection">
           <h2>Contact Us</h2>
-          <hr className="dividerLine" />
+        </div>
+
+        <div className="LocDescontainer">
+          <h2>Store Location</h2>
+        </div>
+      </div>
+
+      <hr className="dividerLine" /> {/* Positioned after both sections */}
+
+      <div className="formAndLocationContainer">
+        <div className="contactFormSection">
           <form onSubmit={handleSubmit}>
             <div className="formGroup">
               <label>Your Name {formData.name === '' && <span className="required">*</span>}</label>
@@ -101,7 +111,6 @@ const ContactUs = () => {
         </div>
 
         <div className="LocDescontainer">
-          <h2>Store Location</h2>
           <div className="storeLocDetails">
           <p>Mirora 1<br />
   123 Rue Principale, Beyrouth<br />
