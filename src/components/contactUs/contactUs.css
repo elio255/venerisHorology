@@ -28,13 +28,16 @@ h2 {
 }
 
 .imageContainer {
-  text-align: center;
   margin-top: 20px;
+  width: 80%;
+  margin-left: 10%; 
+  margin-right: 10%; 
 }
 
 .contactImage {
   width: 100%;
-  max-width: 600px;
+  max-width: 100%;
+  max-height: 600px;
   height: auto;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -80,7 +83,7 @@ h2 {
 }
 
 .googleMapButton:hover {
-  color:white;
+  color: white;
 }
 
 /* Adjusted hr styles */
@@ -138,7 +141,7 @@ h2 {
 }
 
 .submitButton:hover {
-  color:white;
+  color: white;
 }
 
 .required {
@@ -167,6 +170,12 @@ h2 {
   .contactImage {
     max-width: 100%;
     height: auto;
+  }
+
+  .imageContainer {
+    width: 90%; 
+    margin-left: 5%; 
+    margin-right: 5%; 
   }
 
   .dividerLine {
