@@ -25,20 +25,45 @@ h2 {
   color: white;
 }
 
+.imageContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contactImage {
+  width: 700px; /* Keeps aspect ratio */
+  height: 450px; /* Set a smaller height */
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+
+.formAndLocationContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.contactFormSection {
+  width: 60%;
+  margin-right: 2%;
+}
+
+.LocDescontainer {
+  width: 35%;
+  margin-left: 2%;
+}
+
 .storeLocDetails {
   background-color: rgb(67, 67, 67);
-  width: 300px;
+  width: 100%;
   height: auto;
   padding: 15px;
   color: white;
   margin-bottom: 20px;
+  margin-top: 60px;
   border-radius: 8px;
-}
-
-.LocDescontainer {
-  margin-top: 5%; /* Reduced top margin */
-  margin-left: 10%;
-  margin-bottom: 2%;
 }
 
 .googleMapButton {
@@ -55,18 +80,16 @@ h2 {
   background-color: #A88A6C;
 }
 
-.contactFormSection {
-  margin: 5% 10% 0;
-}
-
 .dividerLine {
   border: 1px solid grey;
+  width:1035px;
   margin-bottom: 20px;
 }
 
 .formGroup {
   margin-bottom: 15px;
 }
+
 
 .formGroup label {
   color: white;
@@ -76,25 +99,24 @@ h2 {
 
 .formGroup input,
 .formGroup textarea {
-    width: 80%; /* Reduced width */
-    max-width: 400px; /* Optional: set a max width for larger screens */
-    padding: 10px;
-    border: 1px solid #838383;
-    border-radius: 5px;
-    background-color: #343434; 
-    color: white; 
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #838383;
+  border-radius: 5px;
+  background-color: #343434;
+  color: white;
 }
 
 .formGroup input[type="text"],
 .formGroup input[type="email"] {
-    height: 35px; /* Slightly reduced height */
+  height: 35px;
 }
 
 .formGroup textarea {
-    height: 80px; /* Reduced height for textarea */
-    resize: none;
+  height: 80px;
+  resize: none;
 }
-
 
 .submitButton {
   background-color: #C5A580;
@@ -103,10 +125,9 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  position: relative;
-  right: 0; /* Move button to the right */
-  margin-top: 20px; /* Add space below the form */
-  float: right; /* Align to the right */
+  margin-top: 20px;
+  display: inline-block; 
+  margin-bottom: 50px;
 }
 
 .submitButton:hover {
