@@ -1,6 +1,7 @@
 /* General styles */
 body {
   background-color: black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container {
@@ -65,8 +66,9 @@ h2 {
   background-color: rgb(67, 67, 67);
   width: 100%;
   height: auto;
-  padding: 15px;
-  margin-top: 7%;
+  padding-top: 2px;
+  padding-left: 15px;
+  margin-top: 6%;
   color: white;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -80,6 +82,7 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .googleMapButton:hover {

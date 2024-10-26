@@ -61,9 +61,9 @@ const ContactUs = () => {
           <h2>Contact Us</h2>
         </div>
 
-        <div className="LocDescontainer">
-          <h2>Store Location</h2>
-        </div>
+        
+          
+        
       </div>
 
       <hr className="dividerLine" />
@@ -112,7 +112,10 @@ const ContactUs = () => {
 
         <div className="LocDescontainer">
           <div className="storeLocDetails">
-          <p>Mirora 1<br />
+            <p><span style={{fontSize:30}}>Store Location:</span>
+            <br />
+            <br />
+          Mirora 1<br />
   123 Rue Principale, Beyrouth<br />
   Liban<br />
   <strong>Téléphone:</strong> (01) 456 789<br />
