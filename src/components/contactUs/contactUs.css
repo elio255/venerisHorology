@@ -58,7 +58,7 @@ h2 {
 
 .LocDescontainer {
   width: 35%;
-  margin-left: 2%;
+  margin-right: 3%;
 }
 
 .storeLocDetails {
@@ -66,7 +66,7 @@ h2 {
   width: 100%;
   height: auto;
   padding: 15px;
-  margin-top: 70px;
+  margin-top: 7%;
   color: white;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -89,7 +89,7 @@ h2 {
 /* Adjusted hr styles */
 .dividerLine {
   border: 1px solid grey;
-  width: 100%;
+  width: 80%;
   margin-top: 10px;
   margin-bottom: 40px;
   height: 1px;

@@ -66,7 +66,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <hr className="dividerLine" /> {/* Positioned after both sections */}
+      <hr className="dividerLine" />
 
       <div className="formAndLocationContainer">
         <div className="contactFormSection">
