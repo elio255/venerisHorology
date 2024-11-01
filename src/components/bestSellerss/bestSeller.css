@@ -22,7 +22,7 @@
   .watch-image {
     max-width: 300px;
     max-height: 300px;
-  
+    border-radius: 150px;
    /* adjust opacity to blend */
    opacity: 0.7;
   }

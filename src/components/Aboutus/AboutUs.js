@@ -55,6 +55,7 @@ const AboutUs = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
           placeholder="youremail@example.com"
+          style={{ paddingLeft: '15px' }}
         />
         <button type="submit">Subscribe</button>
       </form>
