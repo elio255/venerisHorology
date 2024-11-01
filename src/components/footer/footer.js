@@ -78,7 +78,7 @@ const Footer = () => {
           <p>Support</p>
         </div>
         <p className="footer-copyright">
-          © 2018 PlazaThemes. All Rights Reserved.
+          © 2024 PlazaThemes. All Rights Reserved.
         </p>
         <div className="payment-icons">
           <img src={visa} alt="Visa" />
