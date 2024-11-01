@@ -18,7 +18,7 @@ const Footer = () => {
              12345 - Lebanon<br />
              Phone: (961) 01 677 252<br />
              Fax: (961) 01 688 525<br />
-             Email: Contact@plazathemes.com
+             Email: Contact@VenerisHorology.com
           </p>
           <div className="social-icons">
             <i className="fab fa-facebook"></i>
@@ -78,7 +78,7 @@ const Footer = () => {
           <p>Support</p>
         </div>
         <p className="footer-copyright">
-          © 2024 PlazaThemes. All Rights Reserved.
+          © 2024 Veneris Horology. All Rights Reserved.
         </p>
         <div className="payment-icons">
           <img src={visa} alt="Visa" />
