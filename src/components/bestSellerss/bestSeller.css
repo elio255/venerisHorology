@@ -1,0 +1,71 @@
+/* BestSellers.css */
+.best-sellers {
+    text-align: center;
+    padding: 20px;
+    background-color:#242424 ;
+  }
+  
+  .watch-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .watch-item {
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .watch-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .watch-image {
+    max-width: 300px;
+    max-height: 300px;
+  
+   /* adjust opacity to blend */
+   opacity: 0.7;
+  }
+  h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+  }
+  h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+  }
+  .p1{
+    color: #C5A580;
+    border-radius: 10px;
+    -webkit-text-stroke: 0.3px #C5A580 ; 
+  }
+  
+ 
+.shop-buttons {
+  margin-top: 10px;
+  margin-left:30px;
+  padding: 10px 20px;
+  background-color: #242424;
+  color: #C5A580;
+  border: 2px solid #C5A580; /* Yellow border */
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 20px;
+text-align: center;
+align-items: center;
+
+}
+
+.btn-container {
+    display: flex; /* Use flex to center the button */
+    justify-content: center; /* Center it horizontally */
+    margin-top: 20px; /* Optional: space above the button */
+}
+
+.shop-buttons:hover {
+  background-color: #C5A580; /* Yellow on hover */
+  color: #242424; /* Change text color on hover */
+}

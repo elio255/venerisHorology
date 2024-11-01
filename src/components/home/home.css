@@ -5,9 +5,9 @@
   }
   
   .first-image {
-    width: 80%; /* Adjust this to the desired size */
-    height:100vh; /* Maintain aspect ratio */
-    max-width: 500px; /* Optional: Set a max width if needed */
+    width: 50%; /* Adjust this to the desired size */
+    height:80vh; /* Maintain aspect ratio */
+    max-width:400px; /* Optional: Set a max width if needed */
   }
   .text-container {
      /* Limit the width for better readability */
