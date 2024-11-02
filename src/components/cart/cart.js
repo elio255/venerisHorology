@@ -23,7 +23,7 @@ const Cart = () => {
 
     return (
         <div className="cart-container">
-            <h1 className="cart-title">Your Cart</h1>
+            <h1 className="cart-title">Your Basket</h1>
             {orderConfirmed ? (
                 <p>Thank you for your order!</p> // Display message after placing the order
             ) : cartItems.length === 0 ? (
