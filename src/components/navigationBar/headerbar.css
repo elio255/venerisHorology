@@ -32,3 +32,31 @@ nav ul li a:hover {
     color: white;
     border-radius: 4px;
 }
+.cart-icon {
+    margin-left: auto; /* Push the cart icon to the end of the row */
+}
+
+nav .fa-shopping-cart {
+    font-size: 24px; /* Adjust icon size */
+    color: black; /* Icon color */
+}
+
+/* HeaderBar.css */
+
+
+
+.cart-item-count {
+    position: absolute; /* Positioning the count */
+    top: 45px; /* Adjust to position above or inside the icon */
+    right: 30px; /* Adjust to position to the right of the icon */
+    /* background-color: red; Background color for visibility */
+    color: white; /* Text color for contrast */
+    border-radius: 50%; /* Circle shape */
+    width: 20px; /* Width of the circle */
+    height: 20px; /* Height of the circle */
+    display: flex; /* Center text inside */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-size: 14px; /* Font size for the number */
+}
+

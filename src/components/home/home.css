@@ -59,4 +59,7 @@
     color: black; /* Change text color on hover */
   }
   
-  
+  body{
+    padding: 0;
+    margin: 0;
+  }

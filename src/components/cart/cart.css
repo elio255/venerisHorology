@@ -1,0 +1,95 @@
+/* Cart.css */
+.cart-container {
+    max-width: 400px; /* Max width of the card */
+    min-height: 300px; /* Minimum height for visibility */
+    height: auto; /* Adjusts based on the content */
+    margin: 50px auto; /* Center the card */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Padding for the container */
+    display: flex; /* Use flex to organize content */
+    flex-direction: column; /* Arrange items in a column */
+}
+/* New Container for Total and Place Order Button */
+.total-row {
+    display: flex; /* Use flex to lay out total and button */
+    justify-content: space-between; /* Space between total and button */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Space above the total row */
+}
+body{
+    padding: 0;
+    margin: 0;
+  }
+
+.cart-title {
+    font-size: 24px; /* Title font size */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.cart-items {
+    max-height: 400px; /* Increased maximum height to show more items */
+    overflow-y: auto;  /* Enable vertical scrolling when necessary */
+}
+/* Cart.css */
+.cart-title {
+    font-size: 24px; /* Font size for title */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+    color: black;
+}
+
+/* Cart.css */
+.place-order-button {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: end;
+    margin-top: 20px;  /* Space above the button */
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #C5A580; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Font size */
+   
+}
+
+.place-order-button:hover {
+    background-color: #2E2E2E; /* Darker green on hover */
+}
+
+.cart-item {
+    display: flex; 
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between image and text */
+    border-bottom: 1px solid #e0e0e0; /* Divider */
+    padding: 10px 0; /* Spacing for each item */
+}
+
+.cart-item:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+.cart-item img {
+    width: 40px; 
+    height: auto; 
+    border-radius: 4px; /* Slightly round the image corners */
+    margin-right: 10px; /* Space between image and text */
+}
+
+
+.cart-total {
+    margin-top: 20px; /* Space above total, can be adjusted */
+    font-size: 20px; /* Total font size */
+    font-weight: bold; /* Make total prominent */
+    align-self: flex-end; /* Align to the bottom of the cart container */
+}
+/* Style for delete icon */
+.cart-item svg {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    color: grey; /* Change color to match design */
+    margin-right: 20px;
+}

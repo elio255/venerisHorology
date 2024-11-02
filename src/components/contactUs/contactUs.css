@@ -189,3 +189,7 @@ h2 {
     font-size: 14px;
   }
 }
+body{
+  padding: 0;
+  margin: 0;
+}
