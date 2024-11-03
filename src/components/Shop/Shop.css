@@ -2,21 +2,38 @@
     display: flex;
     padding: 20px;
     color: #f8f8f8;
-    height: 100vh; 
-    overflow: hidden; 
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
 }
 
+@media (min-width: 768px) {
+    .shop-container {
+        flex-direction: row;
+    }
+}
 
 .sidebar {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     border-right: 2px solid grey;
     box-sizing: border-box;
     flex-shrink: 0;
     padding-top: 38px;
-    overflow: hidden; 
+    overflow: hidden;
+    background-color: #1E1E1E;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        border-right: none;
+        border-bottom: 2px solid grey;
+        width: 100%;
+    }
 }
 
 .sidebar h2 {
+    
     color: #C5A580;
     font-size: 20px;
     margin-bottom: 10px;
@@ -27,7 +44,6 @@
     padding: 0;
     margin: 0;
 }
-
 
 .price-range-container {
     display: flex;
@@ -42,7 +58,6 @@
     color: #C5A580;
 }
 
-
 .search-bar {
     width: 90%;
     padding: 10px;
@@ -52,6 +67,8 @@
     color: #C5A580;
     font-size: 16px;
     outline: none;
+    margin-top: 15px;
+  margin-left: 5%;  
 }
 
 .search-bar::placeholder {
@@ -59,22 +76,20 @@
     opacity: 0.8;
 }
 
-
 .content {
     flex-grow: 1;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
-
 .scrollable-watch-grid {
-    flex-grow: 1; 
+    flex-grow: 1;
     overflow-y: auto;
     padding-right: 10px;
     margin-top: 10px;
 }
-
 
 .watch-grid {
     display: grid;
@@ -83,26 +98,39 @@
     justify-items: center;
 }
 
+@media (max-width: 1024px) {
+    .watch-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .watch-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
 
 .watch-card {
     text-align: center;
-    width: 200px;
-    height: 300px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     color: #f8f8f8;
     text-decoration: none;
     padding: 10px;
     box-sizing: border-box;
 }
 
-
 .watch-image {
     width: 100%;
-    height: 250px;
+    height: auto;
+    max-height: 250px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
 }
-
 
 .watch-card h3 {
     margin: 0;
