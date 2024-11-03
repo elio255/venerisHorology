@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import BestSeller1 from '../images/bstblack.jpg'; // Ensure image import paths are correct
+import BestSeller1 from '../images/bstblack.jpg';
 import BestSeller2 from '../images/bstGold.jpg';
 import BestSeller3 from '../images/bstFem.jpg';
 import watch1 from '../images/watch1.1.png';

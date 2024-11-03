@@ -17,9 +17,9 @@ import watch10 from '../images/watch2.0.png';
 import watch11 from '../images/watch2.1.png';
 
 const watches = [
-    { id: 1, name: 'Mon', price: 600, gender: 'unisex', image: BestSeller1 },
-    { id: 2, name: 'Goldir', price: 1200, gender: 'male', image: BestSeller2 },
-    { id: 3, name: 'RG', price: 800, gender: 'unisex', image: BestSeller3 },
+    { id: 1, name: 'Heritage HO1980', price: 600, gender: 'unisex', image: BestSeller3 },
+    { id: 2, name: 'Horology 1818', price: 1200, gender: 'male', image: BestSeller2 },
+    { id: 3, name: 'Lumina 2001', price: 800, gender: 'unisex', image: BestSeller1 },
     { id: 4, name: 'Celestial Eclipse', price: 1450, gender: 'male', image: watch1 },
     { id: 5, name: 'Rose Imperial', price: 1100, gender: 'male', image: watch2 },
     { id: 6, name: 'Voyager Pro', price: 2000, gender: 'female', image: watch3 },
