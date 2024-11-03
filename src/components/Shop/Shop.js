@@ -17,9 +17,9 @@ import watch10 from '../images/watch2.0.png';
 import watch11 from '../images/watch2.1.png';
 
 const watches = [
-    { id: 1, name: 'Heritage HO1980', price: 600, gender: 'unisex', image: BestSeller3 },
-    { id: 2, name: 'Horology 1818', price: 1200, gender: 'male', image: BestSeller2 },
-    { id: 3, name: 'Lumina 2001', price: 800, gender: 'unisex', image: BestSeller1 },
+    { id: 1, name: 'Heritage HO1980', price: 299.99, gender: 'unisex', image: BestSeller3 },
+    { id: 2, name: 'Horology 1818', price: 199.99, gender: 'male', image: BestSeller2 },
+    { id: 3, name: 'Lumina 2001', price: 399.99, gender: 'unisex', image: BestSeller1 },
     { id: 4, name: 'Celestial Eclipse', price: 1450, gender: 'male', image: watch1 },
     { id: 5, name: 'Rose Imperial', price: 1100, gender: 'male', image: watch2 },
     { id: 6, name: 'Voyager Pro', price: 2000, gender: 'female', image: watch3 },
@@ -117,6 +117,7 @@ const Shop = () => {
                             <Link to={`/watch-details/${watch.id}`} key={watch.id} className="watch-card">
                                 <img src={watch.image} alt={watch.name} className="watch-image" />
                                 <h3>{watch.name}</h3>
+                                <h3>{watch.price.toFixed(2)}$</h3>
                             </Link>
                         ))
                     ) : (
