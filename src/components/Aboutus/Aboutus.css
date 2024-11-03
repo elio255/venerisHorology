@@ -90,3 +90,37 @@ font-size: 20px;
   }
   
   
+  @media (max-width: 768px) {
+    .about-us h2 {
+        font-size: 1.5em; /* Adjust subtitle font size on tablets */
+    }
+    .about-us p {
+        font-size: 1em; /* Adjust paragraph font size on tablets */
+    }
+    .newsletter-form button {
+        padding: 10px 20px; /* Adjust padding on button for tablets */
+        font-size: 1em; /* Adjust button font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us h2 {
+        font-size: 1.2em; /* Further reduce subtitle font size for mobile */
+    }
+    .about-us p {
+        font-size: 0.9em; /* Further reduce paragraph font size for mobile */
+    }
+    .newsletter-form {
+        padding: 15px; /* Reduce padding for the newsletter form on mobile */
+    }
+    .newsletter-form input {
+        font-size: 14px; /* Smaller font for input fields on mobile */
+    }
+    .newsletter-form button {
+        font-size: 14px; /* Smaller font for button on mobile */
+        padding: 10px 15px; /* Adjust button padding for mobile */
+    }
+    .subscribe-message {
+        font-size: 0.8em; /* Smaller message font size for mobile */
+    }
+}

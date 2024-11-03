@@ -20,7 +20,7 @@ body{
 
 .watch-image-shop {
   width: 100%; /* Use full width of the container */
-  max-width: 450px; /* Maximum width to maintain size */
+  max-width: 350px; /* Maximum width to maintain size */
   height: 90%; /* Maintain aspect ratio when resizing */
 max-height: 350px;
   border-radius: 10px; /* Rounded corners */
@@ -92,6 +92,7 @@ max-height: 350px;
   cursor: pointer; /* Change cursor to pointer */
   font-size: 16px; /* Font size */
   margin-bottom: 40px;
+  margin-right: 40px;
 }
 
 .add-to-cart-button:hover {
