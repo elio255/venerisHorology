@@ -70,6 +70,7 @@ const Shop = () => {
                     value={priceRange[1]} 
                     onChange={handlePriceChange}
                 />
+                <br />
                 <span>{`$${priceRange[0]} - $${priceRange[1]}`}</span>
 
                 <h2>Gender</h2>
@@ -111,18 +112,20 @@ const Shop = () => {
                     className="search-bar"
                 />
 
-                <div className="watch-grid">
-                    {filteredWatches.length > 0 ? (
-                        filteredWatches.map((watch) => (
-                            <Link to={`/watch-details/${watch.id}`} key={watch.id} className="watch-card">
-                                <img src={watch.image} alt={watch.name} className="watch-image" />
-                                <h3>{watch.name}</h3>
-                                <h3>{watch.price.toFixed(2)}$</h3>
-                            </Link>
-                        ))
-                    ) : (
-                        <p>No watches match your search criteria.</p>
-                    )}
+                <div className="scrollable-watch-grid">
+                    <div className="watch-grid">
+                        {filteredWatches.length > 0 ? (
+                            filteredWatches.map((watch) => (
+                                <Link to={`/watch-details/${watch.id}`} key={watch.id} className="watch-card">
+                                    <img src={watch.image} alt={watch.name} className="watch-image" />
+                                    <h3>{watch.name}</h3>
+                                    <h3>{watch.price.toFixed(2)}$</h3>
+                                </Link>
+                            ))
+                        ) : (
+                            <p>No watches match your search criteria.</p>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>

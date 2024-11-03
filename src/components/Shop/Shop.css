@@ -1,16 +1,19 @@
-/* Shop.css */
 .shop-container {
     display: flex;
     padding: 20px;
     color: #f8f8f8;
+    height: 100vh; 
+    overflow: hidden; 
 }
 
-/* Fixed width for the sidebar to prevent resizing */
+
 .sidebar {
-    width: 155px;
-    border-right: 2px solid white ;
+    width: 200px;
+    border-right: 2px solid grey;
     box-sizing: border-box;
-    flex-shrink: 0; /* Prevents sidebar from resizing */
+    flex-shrink: 0;
+    padding-top: 38px;
+    overflow: hidden; 
 }
 
 .sidebar h2 {
@@ -25,12 +28,12 @@
     margin: 0;
 }
 
-/* Price range container for keeping label fixed under slider */
+
 .price-range-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px; /* Space below for layout consistency */
+    margin-bottom: 20px;
 }
 
 .price-range-label {
@@ -39,7 +42,7 @@
     color: #C5A580;
 }
 
-/* Styling for the search bar */
+
 .search-bar {
     width: 90%;
     padding: 10px;
@@ -56,42 +59,51 @@
     opacity: 0.8;
 }
 
-/* Keep the content area consistent */
+
 .content {
     flex-grow: 1;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Watch grid layout - 3 columns with very small horizontal gap */
+
+.scrollable-watch-grid {
+    flex-grow: 1; 
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+
 .watch-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 watches per row */
-    row-gap: 20px; /* Keeps vertical gap larger */
-    justify-items: center; /* Center-align items within each grid cell */
-    margin-top: 10%;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    justify-items: center;
 }
 
-/* Watch card styling without background */
+
 .watch-card {
     text-align: center;
     width: 200px;
-    height: 300px; /* Fixed height to prevent layout shifting */
+    height: 300px;
     color: #f8f8f8;
     text-decoration: none;
     padding: 10px;
     box-sizing: border-box;
 }
 
-/* Uniform height and object fit for watch images */
+
 .watch-image {
     width: 100%;
-    height: 250px; /* Set a fixed height for uniformity */
-    object-fit: cover; /* Ensures image fills the height without distortion */
+    height: 250px;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-/* Styling for the watch name */
+
 .watch-card h3 {
     margin: 0;
     font-size: 18px;
