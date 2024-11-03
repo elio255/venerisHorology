@@ -8,14 +8,14 @@ import Footer from './components/footer/footer';
 import AboutUs from './components/Aboutus/AboutUs';
 import WatchDetails from './components/WatchDetails/Watchdetails';
 import Cart from './components/cart/cart'; // Import the Cart component
-
+import ShopPage from './components/Shop/Shop'
 const App = () => {
     return (
         <Router>
             <HeaderBar />
             <Routes>
                 <Route path="/home" element={<Home />} />
-                <Route path="/shop" element={<h1>Shop Page</h1>} /> {/* Placeholder for Shop */}
+                <Route path="/shop" element={<ShopPage />} /> {/* Placeholder for Shop */}
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/contact" element={<ContactUs />} />
                 <Route path="/watch-details/:id" element={<WatchDetails />} />

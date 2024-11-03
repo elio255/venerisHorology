@@ -1,0 +1,99 @@
+/* Shop.css */
+.shop-container {
+    display: flex;
+    padding: 20px;
+    color: #f8f8f8;
+}
+
+/* Fixed width for the sidebar to prevent resizing */
+.sidebar {
+    width: 155px;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Prevents sidebar from resizing */
+}
+
+.sidebar h2 {
+    color: #C5A580;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Price range container for keeping label fixed under slider */
+.price-range-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Space below for layout consistency */
+}
+
+.price-range-label {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #C5A580;
+}
+
+/* Styling for the search bar */
+.search-bar {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #C5A580;
+    border-radius: 20px;
+    background-color: #2E2E2E;
+    color: #C5A580;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar::placeholder {
+    color: #C5A580;
+    opacity: 0.8;
+}
+
+/* Keep the content area consistent */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Watch grid layout - 3 columns with very small horizontal gap */
+.watch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 watches per row */
+    row-gap: 20px; /* Keeps vertical gap larger */
+    justify-items: center; /* Center-align items within each grid cell */
+    margin-top: 10%;
+}
+
+/* Watch card styling without background */
+.watch-card {
+    text-align: center;
+    width: 200px;
+    height: 300px; /* Fixed height to prevent layout shifting */
+    color: #f8f8f8;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Uniform height and object fit for watch images */
+.watch-image {
+    width: 100%;
+    height: 250px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures image fills the height without distortion */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the watch name */
+.watch-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #C5A580;
+}
