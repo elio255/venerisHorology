@@ -5,8 +5,9 @@ import Paypal from '../images/Paypal.png';
 import MasterCard from '../images/MasterCard.png';
 import Skrill from '../images/skrill.png';
 import Visa_Electron from '../images/Visa_Electron.png';
-import watch1 from '../images/watch1.png';
-import watch2 from '../images/watch2.png';
+import watch1 from '../images/watch1.1.png';
+import watch2 from '../images/watch1.2.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -54,15 +55,17 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Custom Products</h3>
           <ul>
-            <li className="product-item">
+          <Link to="/watch-details/4" className="product-item">
               <img src={watch1} alt="watch1" className="product-image" />
-              <span>Acer Aspire Desktop <br /> $122.00</span>
-            </li>
+              <span>Celestial Eclipse <br /> $1450.00</span>
+            </Link>
             <hr className="product-divider" />
-            <li className="product-item">
+          
+            <Link to="/watch-details/5" className="product-item">
               <img src={watch2} alt="watch2" className="product-image" />
-              <span>Acer Aspire AIO <br /> $92.00</span>
-            </li>
+              <span>Rose Imperial <br /> $1100.00</span>
+              </Link>
+           
           </ul>
         </div>
       </div>

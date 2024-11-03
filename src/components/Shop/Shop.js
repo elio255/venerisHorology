@@ -119,7 +119,7 @@ const Shop = () => {
                                 <Link to={`/watch-details/${watch.id}`} key={watch.id} className="watch-card">
                                     <img src={watch.image} alt={watch.name} className="watch-image" />
                                     <h3>{watch.name}</h3>
-                                    <h3>{watch.price.toFixed(2)}$</h3>
+                                    <h3>${watch.price.toFixed(2)}</h3>
                                 </Link>
                             ))
                         ) : (
