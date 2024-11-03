@@ -8,7 +8,7 @@
 /* Fixed width for the sidebar to prevent resizing */
 .sidebar {
     width: 155px;
-    padding: 10px;
+    border-right: 2px solid white ;
     box-sizing: border-box;
     flex-shrink: 0; /* Prevents sidebar from resizing */
 }
