@@ -6,7 +6,21 @@ header {
  width: 100%;
  /* height: 40px; */
  z-index: 1000; 
+ margin-bottom: 90px;
+ /* margin-top:-0px; */
 }
+.header-cart {
+    background-color: #C5A580;
+    color: black;
+    padding: 10px 0;
+ position: fixed;
+ width: 100%;
+ /* height: 40px; */
+ z-index: 1000; 
+ margin-bottom: 90px;
+    margin-top: -90px; /* Negative margin when the cart is visible */
+}
+
 
 nav ul {
     list-style-type: none;

@@ -2,7 +2,7 @@ import React from 'react';
 import Founder from '../images/founder-removebg-preview.png';
 const FounderHorology = () => {
     return (
-        <div style={{ display: 'flex', alignItems: 'center',backgroundColor:'black' }}>
+        <div style={{ display: 'flex', alignItems: 'center',backgroundColor:'black',paddingBottom:'60px', }}>
             <img 
                 src = {Founder}
                 alt="Veneris Horology" 

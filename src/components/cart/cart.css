@@ -1,78 +1,92 @@
 .cart-container {
-    max-width: 400px; /* Maximum width of the cart */
-    min-height: 300px; /* Minimum height for visual balance */
-    height: auto; /* Responsive height */
-    margin: 50px auto; /* Center the cart horizontally and add top margin */
-    background-color: white; /* White background for the cart */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 20px; /* Padding for inner spacing */
-    padding-top: 0; /* Additional spacing adjustment for top */
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Arrange content vertically */
+    max-width: 450px;
+    min-height: 250px;
+    margin: 0 auto; /* Center the cart horizontally */
+    /* margin-top: 0px; Add top margin for space between header and cart */ 
+    margin-top: 90px;
+    background-color: white;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 0px 20px; /* Padding for top and bottom */
+     display: flex;
+    flex-direction: column;
 }
 
+
+
+
+.card{
+    padding-top: 80px;
+}
 .cart-title {
-    font-size: 24px; /* Size of the cart title */
-    margin-bottom: 20px; /* Space below the title */
-    text-align: center; /* Center the title text */
-    color: black; /* Text color */
+    color: #2E2E2E;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: -40px;
 }
 
 .cart-items {
-    max-height: 400px; /* Maximum height with scroll */
-    overflow-y: auto; /* Vertical scrollbar for overflow */
+    max-height: 280px;
+    overflow-y: auto;
 }
 
 .total-row {
-    display: flex; /* Flex layout for total and button */
-    justify-content: space-between; /* Space between components */
-    align-items: center; /* Align items vertically center */
-    margin-top: 20px; /* Space above the total row for separation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .place-order-button {
-    padding: 10px 15px; /* Padding for the button */
-    background-color: #C5A580; /* Background color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners for button */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-    margin-top: 20px; /* Margin for spacing */
+    padding: 10px 15px;
+    background-color: #C5A580;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .place-order-button:hover {
-    background-color: #2E2E2E; /* Darker hover color */
+    background-color: #2E2E2E;
 }
 
+.confemp{
+    text-align: center;
+}
 .cart-item {
-    display: flex; /* Flex layout for items */
-    align-items: center; /* Vertical centering */
-    justify-content: space-between; /* Space between elements */
-    border-bottom: 1px solid #e0e0e0; /* Bottom border */
-    padding: 10px 0; /* Spacing within item */
+    display: flex;
+    align-items: center; /* Vertically center the item */
+    justify-content: space-between; /* Space between the image and text */
+    border-bottom: 1px solid #e0e0e0; /* Light border between items */
+    padding: 10px 0; /* Padding for the item spacing */
 }
 
 .cart-item:last-child {
-    border-bottom: none; /* No border on last item */
+    border-bottom: none; /* No border on the last item */
 }
 
 .cart-item img {
     width: 40px; /* Width of product images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 4px; /* Rounded image corners */
-    margin-right: 10px; /* Margin between image and text */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 4px; /* Slightly rounded corners for images */
+    margin-right: 10px; /* Space between the image and text */
 }
 
 .cart-total {
-    font-size: 20px; /* Font size for total price */
-    font-weight: bold; /* Bold text */
+    font-size: 20px; /* Font size for the total amount */
+    font-weight: bold; /* Make the total prominent */
+    margin-top: 10px; /* Top margin for space above the total */
 }
 
 .cart-item svg {
-    width: 20px; /* Icon width */
-    height: 20px; /* Icon height */
-    color: grey; /* Icon color */
-    margin-right: 20px; /* Right margin */
+    width: 20px; /* Adjust size for the delete icon */
+    height: 20px; /* Adjust size for the delete icon */
+    color: grey; /* Color of the delete icon */
+    margin-right: 20px; /* Space to the right of the icon */
 }

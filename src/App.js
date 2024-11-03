@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderBar from './components/navigationBar/headerbar';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate,useLocation } from 'react-router-dom';
 import Home from './components/home/home';
 import ContactUs from './components/contactUs/contactUs';
 import './App.css';
@@ -12,7 +12,7 @@ import ShopPage from './components/Shop/Shop'
 const App = () => {
     return (
         <Router>
-            <HeaderBar />
+            <Header/>
             <Routes>
                 <Route path="/home" element={<Home />} />
                 <Route path="/shop" element={<ShopPage />} /> {/* Placeholder for Shop */}
@@ -28,4 +28,14 @@ const App = () => {
     );
 };
 
+const Header = () => {
+    const location = useLocation(); // Get the current location from React Router
+    const isCartVisible = location.pathname === '/cart'; // Check if current path is `/cart`
+
+    return (
+        <HeaderBar 
+            headerClass={isCartVisible ? 'header-cart' : ''} // Apply conditional class for margin adjustment
+        />
+    );
+};
 export default App;

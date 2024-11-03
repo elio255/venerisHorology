@@ -23,6 +23,7 @@ const Cart = () => {
 
     return (
         <div className="cart-container">
+            <div className="card">
             <h1 className="cart-title">Your Basket</h1>
             {orderConfirmed ? (
                 <p>Thank you for your order!</p> // Display message after placing the order
@@ -47,8 +48,10 @@ const Cart = () => {
                         <div className="cart-total">Total: ${total}</div>
                         <button onClick={handlePlaceOrder} className="place-order-button">Place Order</button>
                     </div>
-                </div>
+                    </div>
+               
             )}
+          </div>
         </div>
     );
 };
