@@ -5,6 +5,7 @@
   }
   
   .first-image {
+    padding-top: 100px;
     width: 50%; /* Adjust this to the desired size */
     height:80vh; /* Maintain aspect ratio */
     max-width:400px; /* Optional: Set a max width if needed */
@@ -14,7 +15,7 @@
     
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
-  top: 60%;
+  top: 50%;
   left: 65%;
   transform: translate(-50%, -50%); /* Centers text within container */
   color: white;
@@ -27,7 +28,7 @@
     color: #C5A580;
     margin: 0; /* Remove default margin */
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
   }
   
   .subtitle {

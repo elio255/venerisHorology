@@ -1,95 +1,78 @@
-/* Cart.css */
 .cart-container {
-    max-width: 400px; /* Max width of the card */
-    min-height: 300px; /* Minimum height for visibility */
-    height: auto; /* Adjusts based on the content */
-    margin: 50px auto; /* Center the card */
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Padding for the container */
-    display: flex; /* Use flex to organize content */
-    flex-direction: column; /* Arrange items in a column */
+    max-width: 400px; /* Maximum width of the cart */
+    min-height: 300px; /* Minimum height for visual balance */
+    height: auto; /* Responsive height */
+    margin: 50px auto; /* Center the cart horizontally and add top margin */
+    background-color: white; /* White background for the cart */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding for inner spacing */
+    padding-top: 0; /* Additional spacing adjustment for top */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Arrange content vertically */
 }
-/* New Container for Total and Place Order Button */
-.total-row {
-    display: flex; /* Use flex to lay out total and button */
-    justify-content: space-between; /* Space between total and button */
-    align-items: center; /* Center vertically */
-    margin-top: 20px; /* Space above the total row */
-}
-body{
-    padding: 0;
-    margin: 0;
-  }
 
 .cart-title {
-    font-size: 24px; /* Title font size */
+    font-size: 24px; /* Size of the cart title */
     margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title text */
+    color: black; /* Text color */
 }
 
 .cart-items {
-    max-height: 400px; /* Increased maximum height to show more items */
-    overflow-y: auto;  /* Enable vertical scrolling when necessary */
-}
-/* Cart.css */
-.cart-title {
-    font-size: 24px; /* Font size for title */
-    margin-bottom: 20px; /* Space below the title */
-    text-align: center; /* Center the title */
-    color: black;
+    max-height: 400px; /* Maximum height with scroll */
+    overflow-y: auto; /* Vertical scrollbar for overflow */
 }
 
-/* Cart.css */
+.total-row {
+    display: flex; /* Flex layout for total and button */
+    justify-content: space-between; /* Space between components */
+    align-items: center; /* Align items vertically center */
+    margin-top: 20px; /* Space above the total row for separation */
+}
+
 .place-order-button {
-    display: flex; 
-    justify-content: flex-end;
-    align-items: end;
-    margin-top: 20px;  /* Space above the button */
     padding: 10px 15px; /* Padding for the button */
-    background-color: #C5A580; /* Green background */
-    color: white; /* White text color */
+    background-color: #C5A580; /* Background color */
+    color: white; /* Text color */
     border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Font size */
-   
+    margin-top: 20px; /* Margin for spacing */
 }
 
 .place-order-button:hover {
-    background-color: #2E2E2E; /* Darker green on hover */
+    background-color: #2E2E2E; /* Darker hover color */
 }
 
 .cart-item {
-    display: flex; 
-    align-items: center; /* Center vertically */
-    justify-content: space-between; /* Space between image and text */
-    border-bottom: 1px solid #e0e0e0; /* Divider */
-    padding: 10px 0; /* Spacing for each item */
+    display: flex; /* Flex layout for items */
+    align-items: center; /* Vertical centering */
+    justify-content: space-between; /* Space between elements */
+    border-bottom: 1px solid #e0e0e0; /* Bottom border */
+    padding: 10px 0; /* Spacing within item */
 }
 
 .cart-item:last-child {
-    border-bottom: none; /* No border for the last item */
+    border-bottom: none; /* No border on last item */
 }
 
 .cart-item img {
-    width: 40px; 
-    height: auto; 
-    border-radius: 4px; /* Slightly round the image corners */
-    margin-right: 10px; /* Space between image and text */
+    width: 40px; /* Width of product images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded image corners */
+    margin-right: 10px; /* Margin between image and text */
 }
-
 
 .cart-total {
-    margin-top: 20px; /* Space above total, can be adjusted */
-    font-size: 20px; /* Total font size */
-    font-weight: bold; /* Make total prominent */
-    align-self: flex-end; /* Align to the bottom of the cart container */
+    font-size: 20px; /* Font size for total price */
+    font-weight: bold; /* Bold text */
 }
-/* Style for delete icon */
+
 .cart-item svg {
-    width: 20px; /* Adjust size as needed */
-    height: 20px; /* Adjust size as needed */
-    color: grey; /* Change color to match design */
-    margin-right: 20px;
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+    color: grey; /* Icon color */
+    margin-right: 20px; /* Right margin */
 }
