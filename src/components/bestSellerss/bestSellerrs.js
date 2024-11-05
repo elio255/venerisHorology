@@ -1,14 +1,12 @@
-// BestSellers.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './bestSeller.css';  // Import your CSS file for styling
+import './bestSeller.css'; 
 import BestSeller1 from '../images/bstblack.jpg';
 import BestSeller2 from '../images/bstGold.jpg';
 import BestSeller3 from '../images/bstFem.jpg';
 
 const BestSellers = () => {
-  const navigate = useNavigate();  // Use 'navigate' instead of 'history'
-
+  const navigate = useNavigate(); 
   const bestSellers = [
     { id: 1, name: 'Herittage ho1980', price: 299.99, image: BestSeller1 },
     { id: 2, name: 'Horology 1818', price: 199.99, image: BestSeller2 },
@@ -16,7 +14,7 @@ const BestSellers = () => {
   ];
 
   const openWatchDetails = (id) => {
-    navigate(`/watch-details/${id}`);  // Use 'navigate' directly to go to a route
+    navigate(`/watch-details/${id}`); 
   };
 
   return (
@@ -34,7 +32,6 @@ const BestSellers = () => {
           </div>
         ))}
          </div>
-           {/* Centered Discover More Button */}
       <div className='btn-container'>
         <button className="shop-buttons" onClick={() => navigate('/shop')}>Discover More</button>
       </div> 

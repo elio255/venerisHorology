@@ -1,24 +1,22 @@
 header {
-    background-color: #C5A580;
-    color: black;
-    padding: 10px 0;
+ background-color: #C5A580;
+ color: black;
+ padding: 10px 0;
  position: fixed;
  width: 100%;
- /* height: 40px; */
  z-index: 1000; 
  margin-bottom: 90px;
- /* margin-top:-0px; */
+
 }
 .header-cart {
     background-color: #C5A580;
     color: black;
     padding: 10px 0;
- position: fixed;
- width: 100%;
- /* height: 40px; */
- z-index: 1000; 
- margin-bottom: 90px;
-    margin-top: -90px; /* Negative margin when the cart is visible */
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
+    margin-bottom: 90px;
+    margin-top: -90px; 
 }
 
 
@@ -50,30 +48,29 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 .cart-icon {
-    margin-left: auto; /* Push the cart icon to the end of the row */
+    margin-left: auto; 
 }
 
 nav .fa-shopping-cart {
-    font-size: 24px; /* Adjust icon size */
-    color: black; /* Icon color */
+    font-size: 24px; 
+    color: black; 
 }
 
-/* HeaderBar.css */
+
 
 
 
 .cart-item-count {
-    position: absolute; /* Positioning the count */
-    top: 45px; /* Adjust to position above or inside the icon */
-    right: 30px; /* Adjust to position to the right of the icon */
-    /* background-color: red; Background color for visibility */
-    color: white; /* Text color for contrast */
-    border-radius: 50%; /* Circle shape */
-    width: 20px; /* Width of the circle */
-    height: 20px; /* Height of the circle */
-    display: flex; /* Center text inside */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    font-size: 14px; /* Font size for the number */
+    position: absolute; 
+    top: 45px; 
+    right: 30px; 
+    color: white; 
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 14px; 
 }
 

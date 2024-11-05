@@ -1,4 +1,4 @@
-/* BestSellers.css */
+
 .best-sellers {
     text-align: center;
     padding: 20px;
@@ -23,9 +23,9 @@
     max-width: 300px;
     max-height: 300px;
     border-radius: 150px;
-   /* adjust opacity to blend */
    opacity: 0.7;
   }
+
   h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
@@ -48,7 +48,7 @@
   padding: 10px 20px;
   background-color: #242424;
   color: #C5A580;
-  border: 2px solid #C5A580; /* Yellow border */
+  border: 2px solid #C5A580; 
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -60,12 +60,12 @@ align-items: center;
 }
 
 .btn-container {
-    display: flex; /* Use flex to center the button */
-    justify-content: center; /* Center it horizontally */
-    margin-top: 20px; /* Optional: space above the button */
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
 }
 
 .shop-buttons:hover {
-  background-color: #C5A580; /* Yellow on hover */
-  color: #242424; /* Change text color on hover */
+  background-color: #C5A580; 
+  color: #242424; 
 }

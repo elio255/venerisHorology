@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import './Aboutus.css'; // Assuming you have a CSS file for styling
+import './Aboutus.css'; 
 
 const AboutUs = () => {
     const [email, setEmail] = useState('');
@@ -7,7 +7,6 @@ const AboutUs = () => {
   
     const handleSubmit = (event) => {
       event.preventDefault();
-      // Here you would typically send the email to your backend
       setMessage('Thank you for subscribing to our newsletter!');
       setEmail('');
     };

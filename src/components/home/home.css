@@ -1,43 +1,36 @@
 .first-part {
-    background-color: black; /* Set the background to black */
-    /* padding: 20px; Optional: Add some padding */
-    text-align:start; /* Optional: Center the content */
+    background-color: black; 
+    text-align:start; 
   }
   
   .first-image {
     padding-top: 100px;
-    width: 50%; /* Adjust this to the desired size */
-    height:80vh; /* Maintain aspect ratio */
-    max-width:400px; /* Optional: Set a max width if needed */
+    width: 50%; 
+    height:80vh;
+    max-width:400px; 
   }
   .text-container {
-     /* Limit the width for better readability */
-    
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
-  top: 50%;
-  left: 65%;
-  transform: translate(-50%, -50%); /* Centers text within container */
-  color: white;
-  text-align: center;
-    
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    text-align: center; 
   }
   
   .title {
-    
     color: #C5A580;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     text-align: center;
     font-size: 3em;
   }
   
   .subtitle {
-   color: white;
-  padding-top: 50px; /* Space between title and subtitle */
+    color: white;
+    padding-top: 50px; 
     text-align: center;
     -webkit-text-stroke: 0.3px #C5A580 ; 
-   
-
   }
 
 
@@ -46,18 +39,18 @@
     padding: 10px 20px;
     background-color: black;
     color: #C5A580;
-    border: 2px solid #C5A580; /* Yellow border */
+    border: 2px solid #C5A580;
     border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 30px;
+    font-size: 30px;
 
   }
   
   .shop-button:hover {
-    background-color: #C5A580; /* Yellow on hover */
-    color: black; /* Change text color on hover */
+    background-color: #C5A580; 
+    color: black; 
   }
   
   body{
@@ -65,33 +58,33 @@
     margin: 0;
   }
 
-  /* Responsive Design with Media Queries */
+  
 @media (max-width: 768px) {
   .title {
-      font-size: 2.5em; /* Adjust title size for tablets */
+      font-size: 2.5em; 
   }
   .subtitle {
-      font-size: 1.5em; /* Adjust subtitle size for tablets */
+      font-size: 1.5em;
   }
   .shop-button {
-      font-size: 24px; /* Adjust button font size for tablets */
-      padding: 8px 16px; /* Adjust padding for tablets */
+      font-size: 24px; 
+      padding: 8px 16px; 
   }
 }
 
 @media (max-width: 480px) {
   .first-image {
-      padding-top: 50px; /* Reduce padding for mobile */
-      max-width: 100%; /* Full width on mobile */
+      padding-top: 50px; 
+      max-width: 100%;
   }
   .title {
-      font-size: 2em; /* Smaller title size for mobile */
+      font-size: 2em; 
   }
   .subtitle {
-      font-size: 1.2em; /* Smaller subtitle size for mobile */
+      font-size: 1.2em; 
   }
   .shop-button {
-      font-size: 20px; /* Smaller button font size for mobile */
-      padding: 6px 12px; /* Reduce button padding for mobile */
+      font-size: 20px; 
+      padding: 6px 12px; 
   }
 }

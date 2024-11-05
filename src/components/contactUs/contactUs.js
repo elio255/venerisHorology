@@ -41,7 +41,7 @@ const ContactUs = () => {
     if (hasErrors) {
       setFormErrors(errors);
     } else {
-      window.location.reload(); // Refresh the page on successful form submission
+      window.location.reload();
     }
   };
 

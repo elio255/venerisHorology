@@ -223,12 +223,12 @@ const WatchDetails = () => {
     const watch = watches.find(watch => watch.id === parseInt(id));
 
     if (!watch) {
-        return <div>Watch not found!</div>; // Handle case where watch is not found
+        return <div>Watch not found!</div>; 
     }
 
     const handleAddToCart = () => {
-        dispatch({ type: 'ADD_TO_CART', payload: watch }); // Dispatch the action to add watch
-        alert(`${watch.name} added to cart!`); // User feedback
+        dispatch({ type: 'ADD_TO_CART', payload: watch }); 
+        alert(`${watch.name} added to cart!`); 
     };
 
     return (

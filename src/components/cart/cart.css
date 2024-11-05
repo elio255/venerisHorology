@@ -1,15 +1,14 @@
 .cart-container {
     max-width: 450px;
     min-height: 250px;
-    margin: 0 auto; /* Center the cart horizontally */
-    /* margin-top: 0px; Add top margin for space between header and cart */ 
+    margin: 0 auto; 
     margin-top: 90px;
     background-color: white;
     margin-bottom: 50px;
     border-radius: 8px;
     margin-bottom: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    padding: 0px 20px; /* Padding for top and bottom */
+    padding: 0px 20px;
      display: flex;
     flex-direction: column;
 }
@@ -61,32 +60,32 @@
 }
 .cart-item {
     display: flex;
-    align-items: center; /* Vertically center the item */
-    justify-content: space-between; /* Space between the image and text */
-    border-bottom: 1px solid #e0e0e0; /* Light border between items */
-    padding: 10px 0; /* Padding for the item spacing */
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: 1px solid #e0e0e0; 
+    padding: 10px 0; 
 }
 
 .cart-item:last-child {
-    border-bottom: none; /* No border on the last item */
+    border-bottom: none; 
 }
 
 .cart-item img {
-    width: 40px; /* Width of product images */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 4px; /* Slightly rounded corners for images */
-    margin-right: 10px; /* Space between the image and text */
+    width: 40px; 
+    height: auto; 
+    border-radius: 4px; 
+    margin-right: 10px; 
 }
 
 .cart-total {
-    font-size: 20px; /* Font size for the total amount */
-    font-weight: bold; /* Make the total prominent */
-    margin-top: 10px; /* Top margin for space above the total */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; 
 }
 
 .cart-item svg {
-    width: 20px; /* Adjust size for the delete icon */
-    height: 20px; /* Adjust size for the delete icon */
-    color: grey; /* Color of the delete icon */
-    margin-right: 20px; /* Space to the right of the icon */
+    width: 20px; 
+    height: 20px; 
+    color: grey;
+    margin-right: 20px; 
 }

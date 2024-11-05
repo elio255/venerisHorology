@@ -36,20 +36,20 @@ const watches = [
 const Shop = () => {
     const [search, setSearch] = useState('');
     const [priceRange, setPriceRange] = useState([60, 2000]);
-    const [selectedGenders, setSelectedGenders] = useState([]); // Track selected gender categories
+    const [selectedGenders, setSelectedGenders] = useState([]); 
 
     const handlePriceChange = (e) => {
         const newMaxPrice = parseInt(e.target.value);
         setPriceRange([priceRange[0], newMaxPrice]);
     };
 
-    // Handle gender checkbox change
+   
     const handleGenderChange = (e) => {
         const gender = e.target.value;
         setSelectedGenders((prev) =>
             prev.includes(gender)
-                ? prev.filter((g) => g !== gender) // Remove if already selected
-                : [...prev, gender] // Add if not selected
+                ? prev.filter((g) => g !== gender) 
+                : [...prev, gender] 
         );
     };
 

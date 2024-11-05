@@ -1,11 +1,8 @@
-/* WatchDetails.css */
 .watch-details-container {
   padding-top: 40px;
-  /* background-color: #f8f8f8; Light grey background */
-  border-radius: 10px; /* Rounded corners for the container */
-  /* max-width: 600px; Max width of the details container */
-  margin: 0 auto; /* Center the details on the page */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+  border-radius: 10px; 
+  margin: 0 auto; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
   display: flex; 
   flex-direction: column; 
 }
@@ -19,82 +16,79 @@ body{
 }
 
 .watch-image-shop {
-  width: 100%; /* Use full width of the container */
-  max-width: 350px; /* Maximum width to maintain size */
-  height: 90%; /* Maintain aspect ratio when resizing */
-max-height: 350px;
-  border-radius: 10px; /* Rounded corners */
-
-  margin-right: 50px; /* Space between image and text */
+  width: 100%; 
+  max-width: 350px; 
+  height: 90%; 
+  max-height: 350px;
+  border-radius: 10px; 
+  margin-right: 50px; 
   padding-left: 40px;
 }
 
 
 .watch-info {
-  display: flex; /* Stack title, price, description vertically */
-  flex-direction: column; /* Arrange items in a column */
-  text-align: left; /* Align text to the left */
-  flex-grow: 1; /* Make sure the info section grows to fill space */
-  justify-content: flex-start; /* Align to start */
+  display: flex; 
+  flex-direction: column; 
+  text-align: left; 
+  flex-grow: 1; 
+  justify-content: flex-start; 
 
 }
 
 .watch-title {
-  text-align:center; /* Center align the text */
-  font-size: 28px; /* Font size for the title */
+  text-align:center; 
+  font-size: 28px; 
   padding-top: 40px;
-  margin-top: 20px ; /* Space above and below the title */
+  margin-top: 20px ;
   
 }
 
 .watch-price {
   margin-top: -5px;
-  text-align:center; /* Center align the text */
-  font-size: 24px; /* Font size for the price */
-  margin-bottom: 30px; /* Space below price */
-  color: #C5A580; /* Price color */
+  text-align:center; 
+  font-size: 24px; 
+  margin-bottom: 30px; 
+  color: #C5A580; 
 }
 
 .watch-description {
-  text-align:center; /* Center align the text */
-  font-size: 22px; /* Font size for the description */
-  margin-bottom: 30px; /* Space below description */
-  color: #555; /* Set color for readability */
+  text-align:center;
+  font-size: 22px; 
+  margin-bottom: 30px; 
+  color: #555;
   margin-top: -5px;
 }
 
 .watch-attributes {
-  text-align:start; /* Center align the text */
+  text-align:start;
  margin-top: -30px;
-  font-size: 20px; /* Font size for attributes */
-  margin-bottom: 20px; /* Space below attributes */
+  font-size: 20px; 
+  margin-bottom: 20px; 
   color: white;
 }
 
 .quantity-control label {
-  margin-right: 5px; /* Space between label and input */
+  margin-right: 5px; 
 }
 
 .quantity-control input {
-  width: 60px; /* Set width for the quantity input */
-  padding: 5px; /* Padding inside the input */
-  border: 1px solid #ccc; /* Light border */
-  border-radius: 4px; /* Slightly round corners for the input */
+  width: 60px;
+  padding: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
 }
 
-/* Styling for the Add to Cart button */
 .add-to-cart-button {
-  padding: 10px 15px; /* Padding for button */
-  background-color: #C5A580; /* Button background color */
-  color: white; /* Button text color */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Change cursor to pointer */
-  font-size: 16px; /* Font size */
+  padding: 10px 15px; 
+  background-color: #C5A580; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px; 
   margin-bottom: 40px;
   margin-right: 40px;
 }
 
 .add-to-cart-button:hover {
-  background-color: #2E2E2E; /* Darker background on hover */
-}
+  background-color: #2E2E2E; }

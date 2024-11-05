@@ -7,27 +7,27 @@ const FounderHorology = () => {
             display: 'flex', 
             alignItems: 'center', 
             backgroundColor: 'black', 
-            padding: '60px 20px' // Padding on top and bottom
+            padding: '60px 20px' 
         }}>
             <img 
                 src={Founder}
                 alt="Veneris Horology" 
                 style={{ 
-                    maxWidth: '400px', // Maintain max width
-                    width: '100%', // Make it responsive
-                    height: 'auto', // Maintain aspect ratio
-                    marginRight: '20px' // Space between image and text
+                    maxWidth: '400px', 
+                    width: '100%',
+                    height: 'auto', 
+                    marginRight: '20px' 
                 }} 
             />
             <div style={{ 
-                flex: 1, // Allow this div to take available space
-                textAlign: 'left', // Align text to the left
+                flex: 1, 
+                textAlign: 'left', 
                 color: 'white', 
             }}>
                 <h2 style={{ 
                     color: '#C5A580', 
                     fontFamily: 'Georgia, serif', 
-                    fontSize: '2.5em', // Responsive font size
+                    fontSize: '2.5em', 
                     margin: '0 0 10px' 
                 }}>
                     The Original
@@ -36,7 +36,7 @@ const FounderHorology = () => {
                     padding: '0 20px', 
                     color: 'white', 
                     fontFamily: 'Georgia, serif', 
-                    fontSize: '1.1em', // Slightly larger for readability
+                    fontSize: '1.1em',
                     lineHeight: '1.6' 
                 }}>
                     Born from a passion for time itself, Veneris Horology was founded on 

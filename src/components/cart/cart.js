@@ -1,50 +1,48 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Importing Font Awesome icon
-import { faTrash } from '@fortawesome/free-solid-svg-icons'; // Importing the trash icon
-import './cart.css'; // Ensure appropriate styles are defined
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faTrash } from '@fortawesome/free-solid-svg-icons'; 
+import './cart.css'; 
 const Cart = () => {
-    const cartItems = useSelector(state => state.cart); // Access cart items from Redux
+    const cartItems = useSelector(state => state.cart); 
     const dispatch = useDispatch();
-    const [orderConfirmed, setOrderConfirmed] = useState(false); // State to check if the order is confirmed
+    const [orderConfirmed, setOrderConfirmed] = useState(false); 
 
     const handleRemoveFromCart = (index) => {
-        dispatch({ type: 'REMOVE_FROM_CART', payload: { index } }); // Pass item index to the action
+        dispatch({ type: 'REMOVE_FROM_CART', payload: { index } }); 
     };
 
     const handlePlaceOrder = () => {
-        // You can also dispatch an action to clear the cart if desired
-        dispatch({ type: 'CLEAR_CART' }); // Clear cart logic
-        setOrderConfirmed(true); // Set order confirmed state
+        dispatch({ type: 'CLEAR_CART' }); 
+        setOrderConfirmed(true); 
     };
 
-    const total = cartItems.reduce((acc, item) => acc + item.price, 0).toFixed(2); // Calculate total
+    const total = cartItems.reduce((acc, item) => acc + item.price, 0).toFixed(2); 
 
     return (
         <div className="cart-container">
             <div className="card">
             <h1 className="cart-title">Your Basket</h1>
             {orderConfirmed ? (
-                <p>Thank you for your order!</p> // Display message after placing the order
+                <p>Thank you for your order!</p>
             ) : cartItems.length === 0 ? (
                 <p>Your cart is currently empty.</p>
             ) : (
                 <div>
                     <div className="cart-items">
                         {cartItems.map((item, index) => (
-                            <div className="cart-item" key={index}> {/* Use index as key */}
+                            <div className="cart-item" key={index}> 
                                 <img src={item.image} alt={item.name} />
                                 <span>{item.name} - ${item.price.toFixed(2)}</span>
                                 <FontAwesomeIcon 
-                                    icon={faTrash} // Using the trash icon
-                                    onClick={() => handleRemoveFromCart(index)} // Remove on click
+                                    icon={faTrash} 
+                                    onClick={() => handleRemoveFromCart(index)} 
                                     style={{ cursor: 'pointer', marginRight: '10px' }} 
                                 />
                             </div>
                         ))}
                     </div>
-                    <div className="total-row"> {/* New container for total and button */}
+                    <div className="total-row">
                         <div className="cart-total">Total: ${total}</div>
                         <button onClick={handlePlaceOrder} className="place-order-button">Place Order</button>
                     </div>

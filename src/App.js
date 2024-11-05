@@ -7,21 +7,23 @@ import './App.css';
 import Footer from './components/footer/footer';
 import AboutUs from './components/Aboutus/AboutUs';
 import WatchDetails from './components/WatchDetails/Watchdetails';
-import Cart from './components/cart/cart'; // Import the Cart component
+import Cart from './components/cart/cart'; 
 import ShopPage from './components/Shop/Shop'
+import ScrollToTop from './components/Scrolltop'; 
 const App = () => {
     return (
         <Router>
             <Header/>
+              <ScrollToTop />
             <Routes>
                 <Route path="/home" element={<Home />} />
-                <Route path="/shop" element={<ShopPage />} /> {/* Placeholder for Shop */}
+                <Route path="/shop" element={<ShopPage />} /> 
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/contact" element={<ContactUs />} />
                 <Route path="/watch-details/:id" element={<WatchDetails />} />
-                <Route path="/cart" element={<Cart />} /> {/* Add route for Cart */}
+                <Route path="/cart" element={<Cart />} /> 
                 <Route path="/" element={<Navigate to="/home" />} />
-                <Route path="*" element={<h1>404 Not Found</h1>} /> {/* Optional: handle 404 */}
+                <Route path="*" element={<h1>404 Not Found</h1>} /> 
             </Routes>
             <Footer />
         </Router>
@@ -29,12 +31,12 @@ const App = () => {
 };
 
 const Header = () => {
-    const location = useLocation(); // Get the current location from React Router
-    const isCartVisible = location.pathname === '/cart'; // Check if current path is `/cart`
+    const location = useLocation();
+    const isCartVisible = location.pathname === '/cart'; 
 
     return (
         <HeaderBar 
-            headerClass={isCartVisible ? 'header-cart' : ''} // Apply conditional class for margin adjustment
+            headerClass={isCartVisible ? 'header-cart' : ''} 
         />
     );
 };
