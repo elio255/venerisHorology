@@ -13,9 +13,9 @@ const Home = () => {
     return (
         
 
-      <div className="first-part">
+      <div className="first-parts">
          <div className="text-container">
-        <h1 className="title">Veneris Horology</h1>
+        <h1 className="title">Veneris lol Horology</h1>
         <h2 className="subtitle">A Legacy of Precision, A Statement of Style.</h2>
         <div className='btn'>
         <button className="shop-button" onClick={() => navigate('/shop')}>Shop Now </button>
